@@ -1,12 +1,13 @@
 {
-  "name": "gold-rush-game-testing",
+  "name": "gold-rush-game",
   "version": "1.0.0",
-"description": "Gold Rush game using Phaser(TEST VERSION ONLY)",
-  "main": "game.js",
-  "scripts": {},
-  "author": "Your Name",
-  "license": "MIT",
   "dependencies": {
     "phaser": "^3.60.0"
+  },
+  "scripts": {
+    "start": "index.html"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
   }
 }
