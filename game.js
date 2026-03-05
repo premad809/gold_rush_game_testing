@@ -20,8 +20,9 @@ function preload() {
 }
 
 function create() {
-    // Add image to screen
     player = this.add.image(400, 300, "square");
+    this.add.text(400, 300, "HELO MY CHILD")
+
 }
 
 function update() {
