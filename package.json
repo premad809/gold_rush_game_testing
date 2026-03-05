@@ -2,9 +2,10 @@
   "name": "gold-rush-game",
   "version": "1.0.0",
   "dependencies": {
-    "phaser": "^3.60.0"
+    "phaser": "^3.60.0",
+    "serve": "^14.2.0"
   },
   "scripts": {
-    "start": "index.html"
+    "start": "serve ."
   }
 }
