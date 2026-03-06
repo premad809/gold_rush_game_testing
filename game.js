@@ -48,9 +48,5 @@ function update() {
 
 function class_selector() {
     player = this.add.image(400, 300, "square");
-    this.add.text(400, 300, 'Hello World', {
-        fontFamily: 'MyFont',
-        fontSize: '48px',
-        color: '#ffffff'
-      });
+    this.add.text(400, 300, 'Hello World',)
 }
