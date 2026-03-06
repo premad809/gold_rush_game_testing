@@ -1,5 +1,3 @@
-import WebFont from 'webfontloader';
-
 const config = {
     type: Phaser.AUTO,
     scale: {
@@ -26,21 +24,7 @@ function preload() {
 }
 
 function create() {
-  WebFont.load({
-    custom: {
-      families: ['MyFont'],
-      urls: ['assets/fonts/myfont.css'] // your @font-face CSS
-    },
-    active: () => {
-      // Font is loaded — safe to use
-      this.add.text(100, 100, 'Hello World', {
-        fontFamily: 'MyFont',
-        fontSize: '48px',
-        color: '#ffffff'
-      });
-    }
-  });
-  class_selector()
+
 }
 
 function update() {
