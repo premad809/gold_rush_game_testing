@@ -24,7 +24,7 @@ function preload() {
 }
 
 function create() {
-
+    class_selector();
 }
 
 function update() {
