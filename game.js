@@ -1,7 +1,13 @@
+import WebFont from 'webfontloader';
+
 const config = {
     type: Phaser.AUTO,
-    width: 800,
-    height: 600,
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+        width: 1440,
+        height: 900,
+    },
     backgroundColor: "#222222",
     scene: {
         preload: preload,
@@ -20,12 +26,27 @@ function preload() {
 }
 
 function create() {
-    player = this.add.image(400, 300, "square");
-    this.add.text(400, 300, "HELO MY CHILD")
-
+  WebFont.load({
+    custom: {
+      families: ['MyFont'],
+      urls: ['assets/fonts/myfont.css'] // your @font-face CSS
+    },
+    active: () => {
+      // Font is loaded — safe to use
+      this.add.text(100, 100, 'Hello World', {
+        fontFamily: 'MyFont',
+        fontSize: '48px',
+        color: '#ffffff'
+      });
+    }
+  });
 }
 
 function update() {
-    // Move right every frame
     player.x += 1;
+}
+
+function class_selector() {
+    player = this.add.image(400, 300, "square");
+    this.add.text(400, 300, "HELO MY CHILD")
 }
